@@ -1,27 +1,27 @@
 
 
 var ships ={
-    carrier: {
+    starCruiser: {
         location: [],
         hits:[],
         length: 5,
         
-        battleship:{
+        transport:{
             location: [],
             hits: [],
             length: 4,
             
-            cruiser: {
+            starFighter: {
                 location: [],
                 hits: [],
                 length: 3,
                 
-                submarine: {
+                falcon: {
                     location:[],
                     hits: [],
                     length: 3,
                     
-                    destroyer: {
+                    xwing: {
                         location:[],
                         hits: [],
                         length: 2
@@ -59,7 +59,7 @@ and place ships on the board (later, create function for random placement!)
 0 = empty, 1 = part of a ship, 2 = a sunken part of a ship, 3 = a missed shot
 */
 
-
+// source LearningNerds
 var cpuBoard = 
 [[0,0,0,0,0,0,0,0],
  [0,0,1,1,1,1,1,0],
@@ -72,6 +72,12 @@ var cpuBoard =
 
 var playerBoard = document.getElementsByClassName("playerboard");
 var box = document.getElementsByClassName("box");
+starCruiser = document.getElementById("starcruiser");
+transport = document.getElementById("transport");
+starFighter = document.getElementById("starfighter");
+falcon = document.getElementById("falcon");
+xwing = document.getElementById("xwing");
+
 
 
 //CPU board and ship placement
@@ -104,7 +110,7 @@ function fireMissle(e){
             cpuBoard[rows][columns] = 2;
             win++
             if(win === 17){
-                console.log("all enemy fighters went boom");
+               console.log( "all enemy fighters went boom");
             }
             }else if (cpuBoard[rows][columns] > 1){
                 console.log("Stop wasting your torpedos! You already fired at this location.");
@@ -112,21 +118,13 @@ function fireMissle(e){
             e.stopPropagation();
         }
     
-        for (var i = 0; i < ships; i++){
-            box[i].addEventListener('click', function pickLocation(e){
-            ships.location.push(e.target.id);
-            ships.location[i].length
-            console.log(ships.location);
+      
+        starCruiser.addEventListener("click", function(){
+            if (starCruiser.location >= 5){
+                starCruiser.location.push(e.target.id);
+                consolelog(starCruiser.location);
+            }
         })
-    }
-
-
-
-
-
-
-
-
         
         
         
@@ -137,24 +135,16 @@ function fireMissle(e){
         
         
         
-        
-        // for (var i = 0; i < box.length; i++){
-        //     box[i].addEventListener('click', function pickLocation(e){
-        //         ships.carrier.location.push(e.target.id);
-        //         if (ships.carrier.location.length >= 5){
-        //         console.log(ships.carrier.location);
-        //         }
-        //     })
 // Switches turn but and should be stroing value to array but 
 //not switching text content
 // for (var i = 0; i < box.length; i++){
 // box[i].addEventListener("click", function hit(e){
 //     if (player === 1){
-//         player1.push(e.target.textcontent);
-//         console.log(player1.textcontent);
+//         player1.push(e.target.id);
+//         console.log(player1.id);
 //     }
 //     else if (player === 0){
-//         cpu.push(e.target.textcontent);
+//         cpu.push(e.target.id);
 //         console.log(cpu.textcontent);
 //     }
 //     if (player === 1){
@@ -203,3 +193,4 @@ function fireMissle(e){
 //         }
 //     }
 // }}} 
+        

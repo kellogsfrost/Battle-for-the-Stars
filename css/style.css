@@ -79,7 +79,68 @@ body{
     /* color: white; */
 }
 
-#carrier{
+
+
+.shiproster {
+	position: relative;
+	margin: 0;
+	padding: 0;
+    list-style: none;
+    display: inline-grid;
+}
+.shiproster, button {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-out;
+	-o-transition: opacity 0.5s ease-out;
+	transition: opacity 0.5s ease-out;
+}
+	.shiproster li {
+		margin: 0.5em 0;
+	}
+		.shiproster li:hover {
+			color: #aaa;
+			cursor: pointer;
+		}
+	.shiproster .placing {
+		font-weight: bold;
+	}
+	.shiproster .placed {
+		visibility: hidden;
+		font-weight: bold;
+		opacity: 0;
+		-webkit-transition: all 0.2s ease-in;
+		-o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+ /* p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+        } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #carrier{
     height: 312.5px;
     width: 62.5px;
     border: grey 2px solid;
@@ -113,4 +174,4 @@ body{
     border: grey 2px solid;
     display: inline-block;
     background-color: rgb(83, 79, 79);
-}
+} */

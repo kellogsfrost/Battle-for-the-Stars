@@ -1,5 +1,6 @@
 body{
     background-color: grey;
+    background-image: url(https://i.imgur.com/BsYwnhB.jpg);
 }
 
 
@@ -10,50 +11,106 @@ body{
     grid-template-areas: "playerboard cpuboard";
     height: 100%;
     width: 100%;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 50px;
 }
 
 
 .playerboard{
     display: inline-grid; 
-    border: black solid 2px; 
+    border: blue solid 2px; 
     height: 500px;
     width: 500px;
     text-align: center;
+    font-size: 0px;
+    background-color:rgb(44, 43, 43);
+    opacity: .5;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "one two three four five six seven eight"
-    "nine ten eleven twelve thirteen fourteen fifthteen sixteen"
-    "seventeen eightteen nineteen twenty twentyone twentytwo twentythree twentyfour"
-    "twentyfive twentysix twentyseven twentyeight twentynine thirty thirtyone thirtytwo"
-    "thirtythree thirtyfour thirtyfive thirtysix thirtyseven thirtyeight thirtynine fourty"
-    "fourtyone fourtytwo fourtythree fourtyfour fourtyfive fourtysix fourtyseven fourtyeight"
-    "fourtynine fifty fiftyone fiftytwo fiftythree fiftyfour fiftyfive fiftysix"
-    "fiftyseven fiftyeight fiftynine sixty sixtyone sixtytwo sixtythree sixtyfour"
+    "0,0 0,1 0,2 0,3 0,4 0,5 0,6 0,7"
+    "1,0 1,1 1,2 1,3 1,4 1,5 1,6 1,7"
+    "2,0 2,1 2,2 2,3 2,4 2,5 2,6 2,7"
+    "3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7"
+    "4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7"
+    "5,0 5,1 5,2 5,3 5,4 5,5 5,6 5,7"
+    "6,0 6,1 6,2 6,3 6,4 6,5 6,6 6,7"
+    "7,0 7,1 7,2 7,3 7,4 7,5 7,6 7,7"
 
 }
- .cpuboard{
+ #cpuboard{
+    position:relative;
     display: inline-grid; 
-    border: black 2px solid; 
+    border: red 2px solid; 
     text-align: center;
     height: 500px;
     width: 500px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    background-color:rgb(44, 43, 43);
+    opacity: .5;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "one two three four five six seven eight"
+    /* "one two three four five six seven eight"
     "nine ten eleven twelve thirteen fourteen fifthteen sixteen"
     "seventeen eightteen nineteen twenty twentyone twentytwo twentythree twentyfour"
     "twentyfive twentysix twentyseven twentyeight twentynine thirty thirtyone thirtytwo"
     "thirtythree thirtyfour thirtyfive thirtysix thirtyseven thirtyeight thirtynine fourty"
     "fourtyone fourtytwo fourtythree fourtyfour fourtyfive fourtysix fourtyseven fourtyeight"
     "fourtynine fifty fiftyone fiftytwo fiftythree fiftyfour fiftyfive fiftysix"
-    "fiftyseven fiftyeight fiftynine sixty sixtyone sixtytwo sixtythree sixtyfour"
-} 
-
+    "fiftyseven fiftyeight fiftynine sixty sixtyone sixtytwo sixtythree sixtyfour"   */ 
+ }
+ 
+ #cpuboard div:hover{
+    background-color:rgb(177, 166, 166);
+ }
+ .box:hover{
+    background-color:rgb(177, 166, 166)
+ }
+ 
+ #cpuboard div {
+     position:absolute;
+     border: solid red 2px;
+     width: 62.5px;
+     height: 62.5px;
+ }
 .box{
-    border: solid black 2px;
+    border: solid blue  2px;
+    opacity: .5;
     /* color: white; */
+}
+
+#carrier{
+    height: 312.5px;
+    width: 62.5px;
+    border: grey 2px solid;
+    display: inline-block;
+    background-color: rgb(83, 79, 79);
+}
+#battleship{
+    height: 250px;
+    width: 62.5px;
+    border: grey 2px solid;
+    display: inline-block;
+    background-color: rgb(83, 79, 79);
+}
+#cruiser{
+    height: 187.5px;
+    width: 62.5px;
+    border: grey 2px solid;
+    display: inline-block;
+    background-color: rgb(83, 79, 79);
+}
+#submarine{
+    height: 187.5px;
+    width: 62.5px;
+    border: grey 2px solid;
+    display: inline-block;
+    background-color: rgb(83, 79, 79);
+}
+#destroyer{
+    height: 125px;
+    width: 62.5px;
+    border: grey 2px solid;
+    display: inline-block;
+    background-color: rgb(83, 79, 79);
 }

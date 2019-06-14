@@ -9,6 +9,6 @@ This game was devolped with:
 
 Description:
 
-For our first project I built a Starwars themed battleship. Initally proved more challenging than expected. 
+For our first project I built a Starwars themed battleship. A player vs. AI guessing game. The user must find the location of all five enemy ships before the AI finds all user ships.  
 
 

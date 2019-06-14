@@ -15,14 +15,24 @@ body{
     margin-top: 50px;
 }
 
+#text{
+    color: rgb(37, 148, 15);
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding-left: 100px;
+    position: relative;
+    font-size: xx-large;
+}
 
-.playerboard{
+#playerboard{
+    font-size: 0px;
+    position: relative;
     display: inline-grid; 
     border: blue solid 2px; 
     height: 500px;
     width: 500px;
     text-align: center;
-    font-size: 0px;
     background-color:rgb(44, 43, 43);
     opacity: .5;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
@@ -39,7 +49,7 @@ body{
 
 }
  #cpuboard{
-    position:relative;
+    position: relative;
     display: inline-grid; 
     border: red 2px solid; 
     text-align: center;
@@ -47,23 +57,13 @@ body{
     width: 500px;
     background-color:rgb(44, 43, 43);
     opacity: .5;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    /* "one two three four five six seven eight"
-    "nine ten eleven twelve thirteen fourteen fifthteen sixteen"
-    "seventeen eightteen nineteen twenty twentyone twentytwo twentythree twentyfour"
-    "twentyfive twentysix twentyseven twentyeight twentynine thirty thirtyone thirtytwo"
-    "thirtythree thirtyfour thirtyfive thirtysix thirtyseven thirtyeight thirtynine fourty"
-    "fourtyone fourtytwo fourtythree fourtyfour fourtyfive fourtysix fourtyseven fourtyeight"
-    "fourtynine fifty fiftyone fiftytwo fiftythree fiftyfour fiftyfive fiftysix"
-    "fiftyseven fiftyeight fiftynine sixty sixtyone sixtytwo sixtythree sixtyfour"   */ 
+    
  }
  
  #cpuboard div:hover{
     background-color:rgb(177, 166, 166);
  }
- .box:hover{
+ #playerboard div:hover{
     background-color:rgb(177, 166, 166)
  }
  
@@ -72,58 +72,25 @@ body{
      border: solid red 2px;
      width: 62.5px;
      height: 62.5px;
+     opacity: .5;
  }
-.box{
-    border: solid blue  2px;
-    opacity: .5;
-    /* color: white; */
+
+
+.placed{
+    background-color: blue;
 }
 
-
-
-.shiproster {
-	position: relative;
-	margin: 0;
-	padding: 0;
-    list-style: none;
-    display: inline-grid;
+.miss{
+    background-color: white;
 }
-.shiproster, button {
-	opacity: 1;
-	-webkit-transition: opacity 0.5s ease-out;
-	-o-transition: opacity 0.5s ease-out;
-	transition: opacity 0.5s ease-out;
+
+.hit{
+    background-color: red;
 }
-	.shiproster li {
-		margin: 0.5em 0;
-	}
-		.shiproster li:hover {
-			color: #aaa;
-			cursor: pointer;
-		}
-	.shiproster .placing {
-		font-weight: bold;
-	}
-	.shiproster .placed {
-		visibility: hidden;
-		font-weight: bold;
-		opacity: 0;
-		-webkit-transition: all 0.2s ease-in;
-		-o-transition: all 0.2s ease-in;
-        transition: all 0.2s ease-in;
-    }
 
- /* p{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-        } */
-
-
-
-
-
+.cpuwin{
+    display: none;
+}
 
 
 

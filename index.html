@@ -10,25 +10,23 @@
     
 </head>
 <body>
-    <div class="shiproster">
+    <!-- <div class="shiproster">
     <ul id="buttons">
     <li><button onclick="" id="starcruiser">Star Cruiser</button></li>
     <li><button id="transport">Transport</button></li>
     <li><button id="starfighter">Jedi Starfighter</button></li>
     <li><button id="falcon">Millennium Falcon</button></li>
-    <li><button id="xwing"> X-Wing</button></li>
-</ul>
+    <li><button id="xwing"> X-Wing</button></li> -->
+<!-- </ul> -->
+<div id="text">The fate of the galaxy is in your hands!</div>
 </div>
-<button id="rotate-button" data-direction="0">Rotate Ship</button>
-<!-- <p></p> -->
-<div class="gameholder">
-            <!-- <ul id="items"> -->
-    <div class= "playerboard">
-        <div class="box" id="0,0">0,0</div>
-        <div class="box" id="0,1">0,1</div>
-        <div class="box" id="0,2">0,2</div>
-        <div class="box" id="0,3">0,3</div>
-        <div class="box" id="0,4">0,4</div>
+<div class="gameholder" id="hide">
+    <div id= "playerboard">
+        <div class="box placed" id="0,0">0,0</div>
+        <div class="box placed" id="0,1">0,1</div>
+        <div class="box placed" id="0,2">0,2</div>
+        <div class="box placed" id="0,3">0,3</div>
+        <div class="box placed" id="0,4">0,4</div>
         <div class="box" id="0,5">0,5</div>
         <div class="box" id="0,6">0,6</div>
         <div class="box" id="0,7">0,7</div>
@@ -57,109 +55,42 @@
         <div class="box" id="3,6">3,6</div>
         <div class="box" id="3,7">3,7</div>
         <div class="box" id="4,0">4,0</div>
-        <div class="box" id="4,1">4,1</div>
-        <div class="box" id="4,2">4,2</div>
-        <div class="box" id="4,3">4,3</div>
-        <div class="box" id="4,4">4,4</div>
+        <div class="box placed" id="4,1">4,1</div>
+        <div class="box placed" id="4,2">4,2</div>
+        <div class="box placed" id="4,3">4,3</div>
+        <div class="box placed" id="4,4">4,4</div>
         <div class="box" id="4,5">4,5</div>
         <div class="box" id="4,6">4,6</div>
         <div class="box" id="4,7">4,7</div>
-        <div class="box" id="5,0">5,0</div>
+        <div class="box placed" id="5,0">5,0</div>
         <div class="box" id="5,1">5,1</div>
-        <div class="box" id="5,2">5,2</div>
-        <div class="box" id="5,3">5,3</div>
+        <div class="box placed" id="5,2">5,2</div>
+        <div class="box placed" id="5,3">5,3</div>
         <div class="box" id="5,4">5,4</div>
         <div class="box" id="5,5">5,5</div>
-        <div class="box" id="5,6">5,6</div>
+        <div class="box placed" id="5,6">5,6</div>
         <div class="box" id="5,7">5,7</div>
-        <div class="box" id="6,0">6,0</div>
+        <div class="box placed" id="6,0">6,0</div>
         <div class="box" id="6,1">6,1</div>
         <div class="box" id="6,2">6,2</div>
         <div class="box" id="6,3">6,3</div>
         <div class="box" id="6,4">6,4</div>
         <div class="box" id="6,5">6,5</div>
-        <div class="box" id="6,6">6,6</div>
+        <div class="box placed" id="6,6">6,6</div>
         <div class="box" id="6,7">6,7</div>
-        <div class="box" id="7,0">7,0</div>
+        <div class="box placed" id="7,0">7,0</div>
         <div class="box" id="7,1">7,1</div>
         <div class="box" id="7,2">7,2</div>
         <div class="box" id="7,3">7,3</div>
         <div class="box" id="7,4">7,4</div>
         <div class="box" id="7,5">7,5</div>
-        <div class="box" id="7,6">7,6</div>
-        <div class="box" id="7,7">7,7</div>
-        <!-- </ul> -->
+        <div class="box placed" id="7,6">7,6</div>
+        <div class="box" id="7,7">7,7</div> 
+
     </div>
     
-    <div id="cpuboard"></div> 
-</div>
-            <!-- <div class="box" id="one">65</div>
-            <div class="box" id="two">66</div>
-            <div class="box" id="three">67</div>
-            <div class="box" id="four">68</div>
-            <div class="box" id="five">69</div>
-            <div class="box" id="six">70</div>
-            <div class="box" id="seven">71</div>
-            <div class="box" id="eight">72</div>
-            <div class="box" id="nine">73</div>
-            <div class="box" id="ten"> 74</div>
-            <div class="box" id="eleven">75</div>
-            <div class="box" id="twelve">76</div>
-            <div class="box" id="thirteen">77</div>
-            <div class="box" id="fourteen">78</div>
-            <div class="box" id="fifthteen">79</div>
-            <div class="box" id="sixteen">80</div>
-            <div class="box" id="seventeen">81</div>
-            <div class="box" id="eightteen">82</div>
-            <div class="box" id="nineteen">83</div>
-            <div class="box" id="twenty">84</div>
-            <div class="box" id="twentyone">85</div>
-            <div class="box" id="twentytwo">86</div>
-            <div class="box" id="twentythree">87</div>
-            <div class="box" id="twentyfour">88</div>
-            <div class="box" id="twentyfive">89</div>
-            <div class="box" id="twentysix">90</div>
-            <div class="box" id="twentyseven">91</div>
-            <div class="box" id="twentyeight">92</div>
-            <div class="box" id="twentynine">93</div>
-            <div class="box" id="thirty">94</div>
-            <div class="box" id="thirtyone">95</div>
-            <div class="box" id="thirtytwo">96</div>
-            <div class="box" id="thirtythree">97</div>
-            <div class="box" id="thirtyfour">98</div>
-            <div class="box" id="thirtyfive">99</div>
-            <div class="box" id="thirtysix">100</div>
-            <div class="box" id="thirtyseven">101</div>
-            <div class="box" id="thirtyeight">102</div>
-            <div class="box" id="thirtynine">103</div>
-            <div class="box" id="fourty">104</div>
-            <div class="box" id="fourtyone">105</div>
-            <div class="box" id="fourtytwo">106</div>
-            <div class="box" id="fourtythree">107</div>
-            <div class="box" id="fourtyfour">108</div>
-            <div class="box" id="fourtyfive">109</div>
-            <div class="box" id="fourtysix">110</div>
-            <div class="box" id="fourtyseven">111</div>
-            <div class="box" id="fourtyeight">112</div>
-            <div class="box" id="fourtynine">113</div>
-            <div class="box" id="fifty">114</div>
-            <div class="box" id="fiftyone">115</div>
-            <div class="box" id="fiftytwo">116</div>
-            <div class="box" id="fiftythree">117</div>
-            <div class="box" id="fiftyfour">118</div>
-            <div class="box" id="fiftyfive">119</div>
-            <div class="box" id="fiftysix">120</div>
-            <div class="box" id="fiftyseven">121</div>
-            <div class="box" id="fiftyeight">122</div>
-            <div class="box" id="fiftynine">123</div>
-            <div class="box" id="sixty">124</div>
-            <div class="box" id="sixtyone">125</div>
-            <div class="box" id="sixtytwo">126</div>
-            <div class="box" id="sixtythree">127</div>
-            <div class="box" id="sixtyfour">128</div>  -->
+<div id="cpuboard"></div>
 
-    
-    
     
     
     

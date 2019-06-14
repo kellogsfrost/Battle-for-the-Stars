@@ -2,6 +2,8 @@
 Starship Battles
 
 This game was devolped with
-Javascript
-CSS
-HTML
+1. Javascript
+2. CSS
+3. HTML
+
+H1 Description!

@@ -97,7 +97,7 @@ and place ships on the board (later, create function for random placement!)
 
     function fireMissle(e){
         e.stopPropagation();
-        if ( e.target !== e.currentTarget ) {
+        if ( e.target  ) {
             var rows = e.target.id.substring(1,2)
             var columns = e.target.id.substring(2,3)
             console.log("rows:", rows);

@@ -9,4 +9,6 @@ This game was devolped with:
 
 Description:
 
+For our first project I built a Starwars themed battleship. Initally proved more challenging than expected. 
+
 

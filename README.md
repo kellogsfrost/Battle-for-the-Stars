@@ -10,10 +10,15 @@ The classic game of Battleship with a Starwars twist. Pitting two opponents agai
 <!-- ##### Original game:
 <img src="./img/originalbattleship.jpg" height = 200px width = 400px>
 
+<<<<<<< HEAD
+=======
+For our first project I built a Starwars themed battleship. A player vs. AI guessing game. The user must find the location of all five enemy ships before the AI finds all user ships. It's a fun game that is easy to pick up as a user. I started by laying out my grids in HTML and CSS. Once I had a basic player and cpu board laid out I started working on the javascript. The script of this game proved more challenging than I expected which made it a great first project! 
+>>>>>>> ecc3c600139e9fa868630e9d2360cdd692a81755
 
 ##### Screenshot of the gameplay:
 <img src="./img/battleship_game.png" height = 200px width = 400px> -->
 
+<<<<<<< HEAD
 
 ## Project Requirements
 This is the first project that will be incorporated as part of the portfolio of the General Assembly Software Engineering Immersive. The goal is to combined all that we have learned in Unit 1 (HTML, CSS, and Javascript) into a web game that we can publish. 
@@ -232,3 +237,15 @@ Thanks to Steve Peters, Carlo Bruno, Mike Shull, and Hayden Schultz for their id
 * Cleaning some of the CSS so that the layout does not need to use a fixed or absolute positioning system. 
 * Adding CSS animation ot the Start Screen and the display elements. 
 * Implement a tablet and mobile friendly version of the game. 
+=======
+Planning:
+
+
+I learned the importance of thorough planning with this project. It is easy to get off track if you do not approach your project with a good plan. 
+
+
+
+Next Step:
+
+There are many things I plan to add to the game over the next few weeks. Random generating ship location for AI. Player drag and drop ships. Music and gifs for intro win and loss. A challenge mode with a shot counter and a larger board. 
+>>>>>>> ecc3c600139e9fa868630e9d2360cdd692a81755

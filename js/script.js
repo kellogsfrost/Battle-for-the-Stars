@@ -67,7 +67,7 @@ and place ships on the board (later, create function for random placement!)
 // source LearningNerds
 
 
- 
+ reset = document.getElementById("reset");
  starCruiser = document.getElementById("starcruiser");
  transport = document.getElementById("transport");
  starFighter = document.getElementById("starfighter");
@@ -171,6 +171,25 @@ and place ships on the board (later, create function for random placement!)
         cpuWinGame();
         
         playerWinGame();
+
+
+
+// reset.addEventListener("click",resetGame);
+
+//     function resetGame(){
+//         cpuScore = 0;
+//         playerScore = 0;
+//         var cpuBoard = 
+// [[0,0,0,0,0,0,0,0],
+//  [0,0,1,1,1,1,1,0],
+//  [1,0,0,0,0,0,0,1],
+//  [1,0,0,1,1,0,0,1],
+//  [1,0,0,0,0,0,0,1],
+//  [0,0,0,0,0,0,0,1],
+//  [0,0,0,0,0,0,0,0],
+//  [0,0,0,1,1,1,0,0]];
+// }
+
 
 
 

@@ -1,6 +1,6 @@
 body{
     background-color: grey;
-    background-image: url(https://i.imgur.com/BsYwnhB.jpg);
+    background: url(https://i.imgur.com/BsYwnhB.jpg) top center no-repeat;
 }
 
 
@@ -97,7 +97,9 @@ body{
     display: none;
 }
 
-
+button{
+    
+}
 
 
 
